@@ -1,0 +1,22 @@
+$color_1: #ffffff;
+
+.filter-container {
+  width: 232px;
+  height: 252px;
+  background-color: $color_1;
+  padding: 20px;
+  grid-area: aside-filter;
+
+  .title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .checkbox {
+    display: block;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

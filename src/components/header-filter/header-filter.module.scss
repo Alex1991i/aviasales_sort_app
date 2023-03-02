@@ -1,0 +1,30 @@
+$color_2: #dfe5ec;
+$color_3: #2196f3;
+$color_4: #ffffff;
+
+.filter-container {
+  display: flex;
+  grid-area: filter;
+  height: 50px;
+  @media (max-width: 500px) {
+    max-width: 362px;
+  }
+
+  .filter {
+    width: 250px;
+    height: 50px;
+    border: 1px solid $color_2;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 5px;
+    @media (max-width: 500px) {
+      max-width: 180px;
+    }
+  }
+
+  .active {
+    background-color: $color_3;
+    color: $color_4;
+  }
+}

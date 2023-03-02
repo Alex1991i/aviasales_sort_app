@@ -1,0 +1,29 @@
+$main_color: #f3f7fa;
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'aside-filter filter'
+    'aside-filter ticket'
+    '. ticket';
+  grid-template-columns: 32% 68%;
+  grid-template-rows: 50px 200px 1fr;
+  background: $main_color url('../../img/Logo.svg') no-repeat 50% 50px;
+  max-width: 90%;
+  width: 960px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 160px 103px;
+  gap: 20px;
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'aside-filter'
+      'filter'
+      'ticket'
+      'ticket';
+    justify-items: center;
+    padding: 160px 10px;
+  }
+}

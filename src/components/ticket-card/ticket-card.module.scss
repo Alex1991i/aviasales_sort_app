@@ -1,0 +1,31 @@
+.container {
+  width: 502px;
+  height: 184px;
+  display: grid;
+  margin-bottom: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  @media (max-width: 500px) {
+    width: 360px;
+  }
+  .headers {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #a0b0b9;
+  }
+  .price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #2196f3;
+  }
+  .logo {
+    justify-self: end;
+  }
+}
